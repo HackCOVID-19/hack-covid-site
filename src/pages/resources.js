@@ -19,7 +19,33 @@ const ResourcesPage = () => (
 
     <hr />
 
-    <h2 style={{ marginBottom: 10 }}>Save A Small Business Today</h2>
+    <h2>Business</h2>
+    <p>Resources developed to aid the business community</p>
+
+    <h3 style={{ marginBottom: 10 }}>Business forecast template</h3>
+    <span style={{ fontSize: "80%", marginBottom: 10, display: "block" }}>
+      Author:{" "}
+      <a
+        href="https://www.agencycfo.co.uk/"
+        target="_BLANK"
+        rel="noopener noreferrer"
+      >
+        AgencyCFO
+      </a>
+    </span>
+    <p>
+      A forecasting template to help businesses plan their financials throughout
+      the crisis.
+    </p>
+    <a
+      href="https://docs.google.com/spreadsheets/d/1Ev_iBsJmKSn-uD7_VYGgkHOkPWpQ-FxaPSTz21GsavA/edit#gid=1223093608"
+      target="_BLANK"
+      rel="noopener noreferrer"
+    >
+      Cash Flow Forecast Template
+    </a>
+    <hr style={{ marginTop: 10, marginBottom: 10 }} />
+    <h3 style={{ marginBottom: 10 }}>Save A Small Business Today</h3>
     <span style={{ fontSize: "80%", marginBottom: 10, display: "block" }}>
       Author:{" "}
       <a
