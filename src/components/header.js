@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { slide as Menu } from "react-burger-menu"
+
 import { colors, page } from "../utils/theme"
 
 import "./header.css"
@@ -54,7 +56,7 @@ const Header = ({ siteTitle }) => (
           })}
         </Link>
       </span>
-      <nav>
+      <nav className="desktop-navigation">
         <ul className="navigation">
           <li className="navigation-item">
             <Link className="navigation-link" to="/">
@@ -82,6 +84,23 @@ const Header = ({ siteTitle }) => (
         </ul>
       </nav>
     </div>
+    <Menu right>
+      <Link className="menu-item" to="/">
+        Home
+      </Link>
+      <Link className="menu-item" to="/events/">
+        Events
+      </Link>
+      <Link className="menu-item" to="/resources/">
+        Resources
+      </Link>
+      <a
+        className="menu-item"
+        href="https://join.slack.com/t/hackcovid-19/shared_invite/zt-ctt76nqr-dX2e2j6~f1o4aIBQq9tJPw"
+      >
+        Slack
+      </a>
+    </Menu>
   </header>
 )
 
