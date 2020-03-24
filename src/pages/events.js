@@ -37,7 +37,10 @@ const EventsPage = ({ data }) => {
               {node.frontmatter.organizer.name}
             </a>
           </span>
-          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          <div
+            className="resourceDescription"
+            dangerouslySetInnerHTML={{ __html: node.html }}
+          />
           <div>
             <ul className="resourceTags">
               {node.frontmatter.tags.map((tag, ind) => (

@@ -43,7 +43,10 @@ const ResourcesPage = ({ data }) => {
               {node.frontmatter.author.name}
             </a>
           </span>
-          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          <div
+            className="resourceDescription"
+            dangerouslySetInnerHTML={{ __html: node.html }}
+          />
           <div>
             <ul className="resourceTags">
               {node.frontmatter.tags.map((tag, ind) => (
