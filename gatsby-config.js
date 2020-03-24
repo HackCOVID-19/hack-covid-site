@@ -26,6 +26,13 @@ module.exports = {
         path: `${__dirname}/src/content/resources`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `events`,
+        path: `${__dirname}/src/content/events`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

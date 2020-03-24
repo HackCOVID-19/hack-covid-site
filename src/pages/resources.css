@@ -4,12 +4,14 @@
   margin-bottom: 15px;
 }
 
-.resourceAuthor {
+.resourceAuthor,
+.resourceDate {
   display: inline-block;
   border-bottom: 3px solid rgb(212, 53, 28);
   padding-bottom: 5px;
   margin-bottom: 10px;
   font-size: 70%;
+  margin-right: 10px;
 }
 
 .resourceAuthor,
@@ -19,6 +21,7 @@
 }
 
 .resourceTags {
+  margin: 0;
   list-style: none;
   display: inline-block;
 }
@@ -27,4 +30,5 @@
   display: inline-block;
   font-size: 70%;
   font-weight: bold;
+  margin-right: 5px;
 }
