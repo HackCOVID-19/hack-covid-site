@@ -14,9 +14,25 @@ const EventsPage = () => (
     </p>
 
     <hr />
+    <h2>Meeting in Isolation</h2>
+    <CallOut>Wed 25th March - 15:00 - 16:00 GMT</CallOut>
+    <p>
+      We will be hosting a webinar to show the benefits of staff collaboration
+      using video conferencing, white boards, meeting annotation, instant chat
+      and how to use channels effectively.
+    </p>
+    <a
+      href="https://www.manchesterdigital.com/event/intec-business-solutions/manchester-digital-webinar-meeting-in-isolation"
+      target="_BLANK"
+      rel="noopener noreferrer"
+    >
+      Event link
+    </a>
+
+    <hr />
 
     <h2>HACK COVID-19 - Hackathon to help vulnerable people</h2>
-    <CallOut>Wed 25th March - Fri 27th March</CallOut>
+    <CallOut>Wed 25th March - 14:00 - 15:00 GMT</CallOut>
     <p>
       This is the first event hosted by Hack COVID-19 please join us to start
       building something to support the worlds most vulnerable people in their
