@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "./contact.css"
+
 const contact = () => {
   return (
     <Layout>
@@ -23,7 +25,9 @@ const contact = () => {
         <input name="subject" type="text" />
         <label htmlFor="message">Message</label>
         <textarea name="message" id="#message" cols="30" rows="10"></textarea>
-        <button type="submit">Submit</button>
+        <button class="btn submit-btn" type="submit">
+          Submit
+        </button>
       </form>
     </Layout>
   )
