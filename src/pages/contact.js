@@ -1,9 +1,8 @@
-import React from "react"
+import React, { useRef, useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "./contact.css"
-import { useRef } from "react"
 
 const encode = data => {
   return Object.keys(data)
@@ -12,6 +11,7 @@ const encode = data => {
 }
 
 const Form = () => {
+  const [submitMsg, setSubmitMsg] = useState(false)
   const name = useRef(null)
   const email = useRef(null)
   const subject = useRef(null)
@@ -32,8 +32,8 @@ const Form = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...data }),
     })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error))
+      .then(() => setSubmitMsg("Success: Thankyou for your message."))
+      .catch(error => setSubmitMsg("Error: It appears something went wrong"))
   }
 
   return (
@@ -62,6 +62,7 @@ const Form = () => {
       <button class="btn submit-btn" type="submit">
         Submit
       </button>
+      {submitMsg && <p>{submitMsg}</p>}
     </form>
   )
 }
@@ -71,6 +72,7 @@ const Contact = () => {
     <Layout>
       <SEO title="Contact Us" description="Get in touch with us" />
       <h1>Contact Us</h1>
+      <p>Please use the form to send us a message and we'll be in touch.</p>
       <hr />
       <Form />
     </Layout>

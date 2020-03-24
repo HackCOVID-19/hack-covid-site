@@ -81,6 +81,11 @@ const Header = ({ siteTitle }) => (
               Slack
             </a>
           </li>
+          <li className="navigation-item">
+            <Link className="navigation-link" to="/contact/">
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -100,6 +105,9 @@ const Header = ({ siteTitle }) => (
       >
         Slack
       </a>
+      <Link className="menu-item" to="/contact/">
+        Contact
+      </Link>
     </Menu>
   </header>
 )
