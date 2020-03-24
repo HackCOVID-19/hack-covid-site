@@ -43,12 +43,14 @@ const ResourcesPage = ({ data }) => {
               {node.frontmatter.author.name}
             </a>
           </span>
-          <ul className="resourceTags">
-            {node.frontmatter.tags.map((tag, ind) => (
-              <li key={ind}>#{tag}</li>
-            ))}
-          </ul>
-          <p>{node.excerpt}</p>
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          <div>
+            <ul className="resourceTags">
+              {node.frontmatter.tags.map((tag, ind) => (
+                <li key={ind}>#{tag}</li>
+              ))}
+            </ul>
+          </div>
           <CallOut>
             <a
               href={node.frontmatter.resource.url}
@@ -75,7 +77,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt
+          html
           frontmatter {
             title
             author {
